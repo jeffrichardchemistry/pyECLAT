@@ -14,8 +14,6 @@ setup(
     description='A package for association analysis using the ECLAT method.',
     long_description = description,
     long_description_content_type = "text/markdown",
-	#data_files=[('pyECLAT',['data/base1.csv', 'data/base2.csv'])],
-	package_data={'data':['base1.csv', 'base2.csv']},
     packages=['pyECLAT'],
     install_requires=['pandas>=0.25.3', 'numpy>=1.17.4', 'tqdm>=4.41.1'],
 	classifiers = [

@@ -5,16 +5,14 @@ import numpy as np
 from tqdm import tqdm
 import itertools
 
-
-class Example1:
-        
+class Example1:        
     def get(self):
-        df = pd.read_csv('pyECLAT/data/base1.csv', header=None)
-        return df
+	    df = pd.read_csv('https://raw.githubusercontent.com/jeffrichardchemistry/pyECLAT/master/data/base1.csv', header=None)
+	    return df			
 
 class Example2:
     def get(self):
-        df = pd.read_csv('pyECLAT/data/base2.csv', header=None)
+        df = pd.read_csv('https://raw.githubusercontent.com/jeffrichardchemistry/pyECLAT/master/data/base2.csv', header=None)
         return df
         
 
@@ -242,7 +240,6 @@ class ECLAT():
                     dict_finally_index[separator.join(list(i))] = list(self.df_bin.query('{}'.format(get_query)).loc[:, list(i)].index)
                 
                 if test_support.count(0) == len(test_support):
-                    print('Stopping in combination {} by {}. All supports = 0.'.format(j, j))
                     break
                 test_support = []
             return dict_finally_index, dict_finally_support
