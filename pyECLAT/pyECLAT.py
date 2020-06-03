@@ -206,18 +206,19 @@ class ECLAT():
                         continue
                     #calc support
                     support = numerator / total
-                    test_support.append(support)
+                    
                     
                     #Filter features < min_support
                     if support < min_support:
                         continue
-                    
+
+                    test_support.append(support)
                     #create dictionary with answers
                     dict_finally_support[separator.join(list(i))] = support
                     dict_finally_index[separator.join(list(i))] = list(self.df_bin.query('{}'.format(get_query)).loc[:, list(i)].index)
                 
-                #Stop when all supports = 0
-                if test_support.count(0) == len(test_support):
+                #Stop when all supports = 0 or just one support
+                if test_support.count(0) == len(test_support) - 1 or any(test_support) == False:
                     print('Stopping in combination {} by {}. All supports = 0.'.format(j, j))
                     break
                 test_support = []

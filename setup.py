@@ -5,7 +5,7 @@ with open("README.md", 'r') as fr:
 
 setup(
     name='pyECLAT',
-    version='1.0.0',
+    version='1.0.1',
     url='https://github.com/jeffrichardchemistry/pyECLAT',
     license='BSD License',
     author='Jefferson Richard',
@@ -23,7 +23,6 @@ setup(
 		'License :: OSI Approved :: BSD License',
 		'Natural Language :: English',
 		'Operating System :: Unix',
-		'Operating System :: Linux',
 		'Operating System :: Microsoft :: Windows',
 		'Operating System :: MacOS',
 		'Topic :: Scientific/Engineering :: Artificial Intelligence',
