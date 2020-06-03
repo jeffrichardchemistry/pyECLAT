@@ -237,10 +237,11 @@ class ECLAT():
                     if support < min_support:
                         continue
                     
+                    test_support.append(support)
                     dict_finally_support[separator.join(list(i))] = support
                     dict_finally_index[separator.join(list(i))] = list(self.df_bin.query('{}'.format(get_query)).loc[:, list(i)].index)
                 
-                if test_support.count(0) == len(test_support):
+                if test_support.count(0) == len(test_support) - 1 or any(test_support) == False:
                     break
                 test_support = []
             return dict_finally_index, dict_finally_support
