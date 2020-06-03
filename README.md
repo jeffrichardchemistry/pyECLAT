@@ -1,13 +1,7 @@
 # pyECLAT
-<<<<<<< HEAD
 Unlike the a priori method, the ECLAT method is not based on the calculation of confidence and lift, therefore the ECLAT method is based on the calculation of the support conjunctions of the variables.
 
 pyECLAT is a simple package for associating variables based on the support of the different items of a dataframe.This method returns two dictionaries, one with the frequency of occurrence of the items conjunctions and the other with the support of the items conjunctions.
-=======
-Unlike the a priori method, the ECLAT method is not based on the calculation of confidence and lift, therefore the ECLAT method is based on the calculation of the support together of the variables.
-
-pyECLAT is a simple package for associating variables based on the support of the different items, together, of a dataframe.This method returns two dictionaries, one with the frequency of occurrence of the items together and the other with the support of the items together.
->>>>>>> 3751f6014e46b724d8885991f78f8d127c04661c
 
 ## Install
 <b>Via pip</b>
@@ -24,21 +18,14 @@ python3 setup.py install
 > numpy>=1.17.4, pandas>=0.25.3, tqdm>=4.41.1
 
 ## How to use
-<<<<<<< HEAD
 This package has two dataframes as example, its possible to use:
-=======
-This package has two dataframes as example, its possible to use: 
->>>>>>> 3751f6014e46b724d8885991f78f8d127c04661c
 ```
 from pyECLAT import Example1, Example2
 ex1 = Example1().get()
 ex2 = Example2().get()
 ```
 The working dataframe should look like the one below. In this case, each line represents a customer's purchase at a supermarket.
-<<<<<<< HEAD
 
-=======
->>>>>>> 3751f6014e46b724d8885991f78f8d127c04661c
 |   | 0      | 1     | 2      | 3      |
 |---|--------|-------|--------|--------|
 | 0 | milk   | beer  | bread  | butter |
@@ -86,7 +73,4 @@ help(eclat_instance.support)
 
 ```
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 3751f6014e46b724d8885991f78f8d127c04661c
