@@ -1,4 +1,4 @@
-[![DOI](https://zenodo.org/badge/268823869.svg)](https://zenodo.org/badge/latestdoi/268823869)
+[![DOI](https://zenodo.org/badge/268823869.svg)](https://zenodo.org/badge/latestdoi/268823869) [![PyPI version](https://img.shields.io/pypi/v/pyeclat)](https://pypi.python.org/pypi/pyeclat) [![PyPI Downloads](https://pepy.tech/badge/pyeclat)](https://pepy.tech/project/pyeclat)
 
 # pyECLAT
 Unlike the a priori method, the ECLAT method is not based on the calculation of confidence and lift, therefore the ECLAT method is based on the calculation of the support conjunctions of the variables.
